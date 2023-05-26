@@ -8,7 +8,7 @@ var ol = document.getElementById('todoList');
 			var li = document.createElement('li');
 			li.textContent = todoValue.value;
 			ol.appendChild(li);
-			li.textContent="";
+			todoValue.value="";
 		} 	
 }
 btn.addEventListener('click', addTodo);
