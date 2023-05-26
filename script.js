@@ -5,10 +5,10 @@ var ol = document.getElementById('todoList');
  function addTodo() {
 	 if(todoValue.value)
 		{
-			var li = document.createElement('li');
-			li.textContent = todoValue.value;
+			var list = document.createElement('li');
+			list.textContent = todoValue.value;
 			ol.appendChild(li);
-			li.textContent="";
+			todoValue.value= "";
 		} 	
 }
 btn.addEventListener('click', addTodo);
